@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --light-Cyan: hsl(193, 38%, 86%);
+  --neon-Green: hsl(150, 100%, 66%);
+  --grayish-Blue: hsl(217, 19%, 38%);
+  --dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --dark-Blue: hsl(218, 23%, 16%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p, span {
+  text-align: center;
+  max-width: 18ch;
+  margin-bottom: 2rem;
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-Blue);
+  color: var(--light-Cyan);
+}
+main {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  background-color: var(--dark-Grayish-Blue);
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+main h1 {  
+  font-weight: 100;
+  margin: 2rem auto;
+  color: var(--neon-Green);
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-size: 2rem;
+}
+main p { 
+  font-size: 2.8rem; 
+}
+main > img {
+  margin-bottom: 2rem;
+}
+.desktop-divider { display: none; }
+.title {
+  color: var(--neon-Green);
+}
+.title span {
+  color: White;
+}
+.btn {
+  position: absolute;
+  bottom: -3rem;
+  border: 0;
+  padding: 2rem;
+  border-radius: 50%;
+  background-color: var(--neon-Green);
+  cursor: pointer;
+}
+@media (hover:hover) {
+  .btn:hover {
+    box-shadow: 0 0 52px var(--neon-Green);
+  }
+}
+@media (hover:none) {
+  .btn:active {
+    box-shadow: 0 0 52px var(--neon-Green);
+  }
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 55rem;
+    padding: 3rem;
+  }
+  main h1 {
+    font-size: 2.5rem;
+  }
+  main p {
+    font-size: 3rem;
+  }
+  p, span {
+    max-width: 45ch;
+  }
+  .mobile-divider { display: none; }
+  .desktop-divider { display: block; }
+}

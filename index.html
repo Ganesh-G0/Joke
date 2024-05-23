@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Joke</title>
+</head>
+<body>
+  <main>
+    <h1 class="subtitle">Joke Type: <span id="jokeCategory"></span></h1>
+    <div class="SingleJoke">
+      <p><span id="joke"></span></p>    
+    </div>
+    <div class="TwoPartJoke">
+      <p class="title">Setup: "<span id="setup"></span>"</p>    
+      <p class="title">Delivery: "<span id="delivery"></span>"</p>    
+    </div>
+    <img class="mobile-divider" src="./images/pattern-divider-mobile.svg" alt="divider">
+    <img class="desktop-divider" src="./images/pattern-divider-desktop.svg" alt="divider">
+    <button id="btn" class="btn">
+      <img src="./images/icon-dice.svg" alt="dice">
+    </button>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
